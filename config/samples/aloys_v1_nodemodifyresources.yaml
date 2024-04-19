@@ -1,0 +1,12 @@
+apiVersion: aloys.aloys.io/v1
+kind: NodeModifyResources
+metadata:
+  labels:
+    app.kubernetes.io/name: nodemodifyresources
+    app.kubernetes.io/instance: nodemodifyresources-sample
+    app.kubernetes.io/part-of: node-samples
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: node-samples
+  name: nodemodifyresources-sample
+spec:
+# TODO(user): Add fields here

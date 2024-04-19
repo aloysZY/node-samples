@@ -1,0 +1,31 @@
+# permissions for end users to edit nodemodifyresources.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: nodemodifyresources-editor-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: node-samples
+    app.kubernetes.io/part-of: node-samples
+    app.kubernetes.io/managed-by: kustomize
+  name: nodemodifyresources-editor-role
+rules:
+  - apiGroups:
+      - aloys.aloys.io
+    resources:
+      - nodemodifyresources
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  - apiGroups:
+      - aloys.aloys.io
+    resources:
+      - nodemodifyresources/status
+    verbs:
+      - get
