@@ -16,13 +16,13 @@ patches:
   - patch: |
       - op: "add"
         path: "/webhooks/0/clientConfig/url"
-        value: "https://192.168.1.107:9443/mutate-ingress-baiding-tech-v1beta1-app"
+        value: "https://192.168.1.107:9443/mutate-aloys-aloys-io-v1-nodemodifyresources"
     target:
       kind: MutatingWebhookConfiguration
   - patch: |
       - op: "add"
         path: "/webhooks/0/clientConfig/url"
-        value: "https://192.168.1.107:9443/validate-ingress-baiding-tech-v1beta1-app"
+        value: "https://192.168.1.107:9443/validate-aloys-aloys-io-v1-nodemodifyresources"
     target:
       kind: ValidatingWebhookConfiguration
   - patch: |
