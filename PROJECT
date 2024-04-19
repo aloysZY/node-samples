@@ -6,7 +6,7 @@ domain: aloys.io
 layout:
 - go.kubebuilder.io/v4
 projectName: node-samples
-repo: node-samples
+repo: github.com/aloysZY/node-samples
 resources:
 - api:
     crdVersion: v1
@@ -15,6 +15,10 @@ resources:
   domain: aloys.io
   group: aloys
   kind: NodeModifyResources
-  path: node-samples/api/v1
+  path: github.com/aloysZY/node-samples/api/v1
   version: v1
+  webhooks:
+    defaulting: true
+    validation: true
+    webhookVersion: v1
 version: "3"

@@ -24,7 +24,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"node-samples/test/utils"
+	"github.com/aloysZY/node-samples/test/utils"
 )
 
 const namespace = "node-samples-system"
